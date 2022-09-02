@@ -1,0 +1,94 @@
+% LAST UPDATED 24 JUNE 2022
+
+\documentclass{beamer}
+\usetheme{Pittsburgh}
+\usecolortheme{default}
+
+% PACKAGES USED
+\usepackage[utf8]{vietnam}
+\usepackage{physics}
+\usepackage{amsthm}
+\usepackage{braket}
+
+% MACROS
+
+%% ENVIROMENTS
+\newtheorem{remark}{Remark}
+
+%% COMMANDS
+\newcommand{\dcp}{\delta_{CP}}
+\renewcommand\bra[1]{{\langle{#1}|}}
+\makeatletter
+\renewcommand\ket[1]{%
+  \@ifnextchar\bra{\k@t{#1}\!}{\k@t{#1}}%
+}
+\newcommand\k@t[1]{{|{#1}\rangle}}
+\DeclareMathAlphabet\mathbfcal{OMS}{cmsy}{b}{n}
+\makeatother
+
+% TOC
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+%Information to be included in the title page:
+\title[ACRONYM] %optional
+{Your Title Here\\
+Subtitle Here}
+\author[] % (optional, for multiple authors)
+{Dinh-Tien Nguyen}
+\institute[] % (optional)
+{
+Faculty of Physics\\
+VNU University of Science
+}
+\date{}
+
+\begin{document}
+\frame{\titlepage}
+\tableofcontents
+
+\section{Section 1 Heading}
+\begin{frame}
+    \frametitle{Title Frame 1}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            \begin{itemize}
+                \item Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur;
+                \item Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum;
+                \item Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+            \end{itemize}
+    Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+\end{frame}
+\begin{frame}
+    \frametitle{Title Frame 2 (2 column)}
+    \begin{columns}
+        \begin{column}{0.6\textwidth}
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+            \begin{itemize}
+                \item sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt;
+                \item Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit;
+                \item Sed ut perspiciatis unde omnis iste natus error sit voluptatem;
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.4\textwidth}
+            \begin{figure}
+                \centering 
+                \includegraphics[scale=0.1]{qr.png}
+                \caption{Your QR Code here.}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\section{Section 2 Heading}
+\begin{frame}
+    \frametitle{Title Frame 3}
+    Placeholder.
+    
+
+\end{frame}
+\end{document}
