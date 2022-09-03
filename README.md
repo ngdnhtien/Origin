@@ -1,7 +1,7 @@
-# Origin
+# Why Origin?
 I have an undefinable, unparalleled desire to have all kinds of document being formatted in precisely the same way—that's why Origin.
 
-# How to use Origin
+# How to Origin?
 The name suggests itself--we start from the Origin. Clone the repository to your locals, and then either
 
 1. Open the Keynote files (.key) by Keynote, or
